@@ -1,0 +1,8 @@
+python-multipart
+mysql-connector-python
+numpy
+mangum
+fastapi
+pydantic
+uvicorn
+tensorflow

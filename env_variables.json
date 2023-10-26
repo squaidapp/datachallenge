@@ -1,0 +1,4 @@
+{
+    "SECRET_RDS" : "rds!db-6849e7f9-0614-42df-8224-eeee9f554f17",
+    "DB_NAME" : "migration_db"
+}
