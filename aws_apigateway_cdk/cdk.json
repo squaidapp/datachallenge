@@ -1,0 +1,27 @@
+{
+  "app": "python app.py",
+  "context": {
+    "aws-cdk:enableDiffNoFail": "true",
+    "@aws-cdk/core:stackRelativeExports": "true",
+    "@aws-cdk/aws-ecr-assets:dockerIgnoreSupport": true,
+    "@aws-cdk/aws-secretsmanager:parseOwnedSecretName": true,
+    "@aws-cdk/aws-kms:defaultKeyPolicies": true,
+    "shared_values": {
+      "dev_values": {
+        "account_number": "",
+        "region":"us-east-1",
+        "lambda_arn": "arn:aws:lambda:us-east-1:xxxxxxxxx:function:datachallenge"
+      },
+      "test_values": {
+        "account_number": "",
+        "region":"us-east-1",
+        "lambda_arn": "arn:aws:lambda:us-east-1:xxxxxxxxx:function:datachallenge"
+      },
+      "prod_values": {
+        "account_number": "xxxxxxxxx",
+        "region":"us-east-1",
+        "lambda_arn": "arn:aws:lambda:us-east-1:xxxxxxxxx:function:datachallenge"
+      }
+    }
+  }
+}
